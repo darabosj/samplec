@@ -1,10 +1,15 @@
 #include <stdio.h>
+#include <string.h>
 
 int main(int argc, char **argv) {
 	int i;
-	printf("%i\n",argc);
-	for (i=0;i<argc;i++){
-		printf("%s\n",argv[i]);
+	char nev[30];
+
+	if (argc<2){
+	printf("Invalid parameter! \n");
+	return 1;
 	}
+	strncpy(nev,argv[1],sizeof(nev));
+	printf("Hello %s !!!! \n",nev);
 	return 0;
 }
