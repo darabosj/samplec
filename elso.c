@@ -3,7 +3,7 @@
 #include <sys/types.h>
 #include <unistd.h>
 #include <errno.h>
-
+/* info  */
 void info(){
 	char *uname;
 	uname = getlogin();
